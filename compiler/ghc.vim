@@ -12,9 +12,14 @@ let s:cpo_save = &cpo
 set cpo&vim
 
 CompilerSet errorformat=
-    \%f:%l:%c:\ %terror: %m
+    \%-G%.%#:\ build,
+    \%-G%.%#preprocessing\ library\ %.%#,
+    \%-G[%.%#]%.%#,
+    \%f:%l:%c:\ %trror:\ %m,
 
-
+if exists('g:compiler_ghc_ignore_unmatched_lines')
+  CompilerSet errorformat+=%-G%.%#
+endif
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
