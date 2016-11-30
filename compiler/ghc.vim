@@ -15,7 +15,8 @@ CompilerSet errorformat=
     \%-G%.%#:\ build,
     \%-G%.%#preprocessing\ library\ %.%#,
     \%-G[%.%#]%.%#,
-    \%f:%l:%c:\ %trror:\ %m,
+    \%E%f:%l:%c:\ %m,
+    \%-G--%.%#
 
 if exists('g:compiler_ghc_ignore_unmatched_lines')
   CompilerSet errorformat+=%-G%.%#
