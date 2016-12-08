@@ -2,7 +2,7 @@
 
 Official Haskell GHC compiler plugin distributed in Vim's runtime.
 
-To be used for the `:make` command in order to properly load error and warnings
+To be used for the `:make` command in order to properly load errors and warnings
 on the quickfix list.
 
 
@@ -18,7 +18,7 @@ Compatible with `Vundle`, `Vim-plug`, `Pathogen`, etc.
 
 Set the compiler with `:compiler ghc`.
 
-Or add an auto command to you `.vimrc` file:
+Or add an auto command to your `.vimrc` file:
 
 ```vim
 augroup ft_haskell
